@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1263</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生管理系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form{background-color: rgb(153, 247, 255);}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget{background-color: rgb(0, 150, 250);}
+QTabBar::tab:selected{background-color: rgb(255, 100, 10);}
+#tab{background-color: rgb(153, 247, 255);}
+#tab_2{background-color: rgb(153, 247, 255);}
+#tab_3{background-color: rgb(153, 247, 255);}
+#tab_4{background-color: rgb(153, 247, 255);}
+#tab_5{background-color: rgb(153, 247, 255);}
+#tab_6{background-color: rgb(153, 247, 255);}
+#tab_7{background-color: rgb(153, 247, 255);}
+</string>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Triangular</enum>
+     </property>
+     <property name="currentIndex">
+      <number>5</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>主页</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>48</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>欢迎进入学生管理系统</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>查找学生信息</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学号\姓名\学院查找</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton{background-color:rgb(10, 150, 250);color:white;}
+#pushButton:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>搜 索</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTableView" name="tableView">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>添加学生信息</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1" colspan="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>216</width>
+           <height>150</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>200</width>
+           <height>37</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学号</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>学号</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>260</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>姓名</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入姓名</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QFrame" name="frame_5">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>性别</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>男</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>女</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>出生日期</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_5">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>出生日期1997--1-1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="2">
+        <widget class="QFrame" name="frame_7">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>电话</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_7">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>电话号码</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="2">
+        <widget class="QFrame" name="frame_8">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>学院</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_8">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学院</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="7" column="1" colspan="2">
+        <widget class="QFrame" name="frame_17">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>294</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#pushButton_3,#pushButton_6,#pushButton_7{background-color: rgb(85, 255, 0);border-radius: 5px;border:1px solid black;}#pushButton_3:hover{background-color: rgb(0, 170, 0);}
+</string>
+            </property>
+            <property name="text">
+             <string>添 加</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>295</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>删除学生信息</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学号\姓名\学院查找</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_2{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_2:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>搜 索</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>修改学生信息</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frame_12">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_10">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学号</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_8{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_8:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>搜 索</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_13">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>结果</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QTableWidget" name="tableWidget_2"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>修改</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QFrame" name="frame_14">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QLabel" name="label_8">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>性别</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioButton_4">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>男</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioButton_3">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>女</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_15">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>出生日期</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_11">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="placeholderText">
+                   <string>出生日期1997-1-1</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_16">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item>
+                 <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>电话</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_12">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="placeholderText">
+                   <string>电话号码</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_18">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>学院</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_13">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="placeholderText">
+                   <string>输入学院</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_19">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <spacer name="horizontalSpacer_7">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_9">
+                  <property name="font">
+                   <font>
+                    <family>楷体</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#pushButton_9{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_9:hover{background-color:rgb(10, 10, 250);}</string>
+                  </property>
+                  <property name="text">
+                   <string>确认修改</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_8">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Excel导入</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame_10">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_9">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_6{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_7:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>选择文件</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView_4"/>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_11">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>461</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_7{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_7:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>导  入</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>460</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Excel导出</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_9">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_6">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>输入学号\姓名\学院查找</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_4{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_4:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>搜 索</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#pushButton_5{background-color:rgb(10, 150, 250);color:white;}
+#pushButton_5:hover{background-color:rgb(10, 10, 250);}</string>
+            </property>
+            <property name="text">
+             <string>导 出</string>
+            </property>
+            <property name="shortcut">
+             <string>Enter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_3"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1224</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1112</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>655</x>
+     <y>658</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>896</x>
+     <y>852</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>delete_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1224</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1108</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>modify_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1224</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1113</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>modify()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>956</x>
+     <y>756</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1017</x>
+     <y>854</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1096</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1262</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>lead_in()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>813</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1112</x>
+     <y>798</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>output_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1124</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1017</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>lead_out()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1224</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1114</x>
+     <y>8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>sex()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>sex()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>832</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>690</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>sex()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>983</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1000</x>
+     <y>-17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>sex()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1053</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1109</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>search()</slot>
+  <slot>add()</slot>
+  <slot>modify()</slot>
+  <slot>choose_file()</slot>
+  <slot>lead_in()</slot>
+  <slot>lead_out()</slot>
+  <slot>delete_search()</slot>
+  <slot>modify_search()</slot>
+  <slot>output_search()</slot>
+  <slot>sex()</slot>
+ </slots>
+</ui>
